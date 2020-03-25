@@ -1,0 +1,12 @@
+CREATE TABLE public.espaciofisico
+(
+    idespacio integer NOT NULL,
+    nivel_practica integer NOT NULL,
+    ubicacion_lugar character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT espaciofisico_pkey PRIMARY KEY (idespacio)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.espaciofisico
+    OWNER to postgres;
