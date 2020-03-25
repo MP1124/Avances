@@ -11,4 +11,16 @@ TABLESPACE pg_default;
 
 ALTER TABLE public.espaciofisico
     OWNER to postgres;
-		
+		2 Base de datos Proyectos
+CREATE TABLE public.proyectos
+(
+    idproyecto integer NOT NULL,
+    nombre_estudiante character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    nombre_evaluador character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT proyectos_pkey PRIMARY KEY (idproyecto)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.proyectos
+    OWNER to postgres;
